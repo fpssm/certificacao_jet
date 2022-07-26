@@ -2,3 +2,70 @@
     ViewBag.Title = "Formulário de Certificação";
     Layout = "~/Views/Shared/Base/_Layout.cshtml";
 }
+
+<div class="ui grid container margin top large margin bottom large">
+    <div class="row two column">
+        <div class="column">
+            <div class="ui attached message">
+                <div class="header">Bem-vindo ao nosso site! </div>
+                <p>Preencha o formulário abaixo para se inscrever</p>
+            </div>
+            <form class="ui form attached fluid segment" id="form_certificacao">
+                <div class="field">
+                    <label>Nome</label>
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" name="name" placeholder="Nome" class="input_view">
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>E-mail</label>
+                        <div class="ui left icon input">
+                            <i class="at icon"></i>
+                            <input type="text" name="email" placeholder="E-mail" class="input_view">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Telefone</label>
+                        <div class="ui left icon input">
+                            <i class="mobile alternate icon"></i>
+                            <input type="text" name="phone" placeholder="(00) 00000-0000" class="masked mask_phone input_view">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Assunto</label>
+                    <div class="ui left icon input">
+                        <i class="comment outline icon"></i>
+                        <input type="text" name="subject" placeholder="Assunto" class="input_view">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Mensagem</label>
+                    <textarea name="msg" class="input_view"></textarea>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <div class="ui submit button">Enviar</div>
+                    </div>
+                    <div class="field">
+                        <div class="ui button btn_limpar right floated">Limpar</div>
+                    </div>
+                </div>
+                <div class="ui error message"></div>
+            </form>
+            <div class="form_return"></div>
+        </div>
+
+        <div class="column">
+            <ul class="list_frontend">
+                <li>Nome: <span id="input_view_name"></span></li>
+                <li>E-mail: <span id="input_view_email"></span></li>
+                <li>Telefone: <span id="input_view_phone"></span></li>
+                <li>Assunto: <span id="input_view_subject"></span></li>
+                <li>Mensagem: <span id="input_view_msg"></span></li>
+            </ul>
+        </div>
+    </div>
+</div>

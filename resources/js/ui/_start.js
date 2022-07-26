@@ -46,9 +46,12 @@ require('./modules/policy');
 //--------------------[ MultiCD ]--------------------//
 require('./modules/multiCd');
 
+//--------------------[ Front End ]----------------//
+require('../functions/front_end');
+
 //--------------------[ Start Document ]--------------------//
 $(document).ready(function(){
-    "use strict";    
+    "use strict";
 });
 
 window.imgError = function imgError(event) {
